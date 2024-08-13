@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 from utils import calculate_square  # Import the function from utils.py
 from forcastfinal import forcaster
+from crypto import forcaster1
 
 app = Flask(__name__)
 cors = CORS(app, origins='*')
@@ -36,6 +37,24 @@ def square():
 
 @app.route('/forecast', methods=['POST'])
 def forcast():
+    # Parse request data
+    data = request.get_json()
+    ticker = data.get('ticker')
+    end_date = data.get('end_date')
+    forecast_size = data.get('forecast_size')
+    print(ticker, end_date, forecast_size)
+
+    img1, img2, img3 = forcaster(ticker, end_date, forecast_size)
+
+    # Return the images as JSON response
+    return jsonify({
+        'img1': img1,
+        'img2': img2,
+        'img3': img3
+    })
+
+@app.route('/forecast1', methods=['POST'])
+def forcast1():
     # Parse request data
     data = request.get_json()
     ticker = data.get('ticker')

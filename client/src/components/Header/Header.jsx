@@ -20,7 +20,7 @@ const Header = () => {
                 <div className="header-contents">
                     <h2>Crypto Forecasting</h2>
                     <p>Machine Learning in the domain of Time Series to forecast crypto prices</p>
-                    <button>Use Model</button>
+                    <button onClick={()=>navigate('/crypto')}>Use Model</button>
                 </div>
             </div>
             {/* <div className='header'>

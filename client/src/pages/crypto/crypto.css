@@ -1,0 +1,81 @@
+.forecast-calculator {
+    gap: 50px;
+    margin-top: 100px;
+    margin-left: -470px;
+}
+
+.forecast-calculator-left {
+    width: 100%;
+    max-width: max(30%, 500px);
+    margin-bottom: 100px;
+}
+
+.forecast-calculator-left .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.forecast-calculator-left input,select {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c5c5c5;
+    border-radius: 8px;
+    outline-color: tomato;
+}
+
+.forecast-calculator-left .multi-fields p {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.forecast-calculator-left .multi-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.forecast-calculator-left button {
+    border: 2px;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(120, 66, 237);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.forecast-img {
+    width: 100%;
+    max-width: max(30%, 500px);
+}
+
+.forecast-img .multi-fields-img {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.verify{
+    min-height: 20vh;
+    display: grid;
+}
+
+.verify .spinner{
+    width: 100px;
+    height: 100px;
+    place-self: center;
+    border: 5px solid #bdbdbd;
+    border-top-color: tomato;
+    border-radius: 50%;
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

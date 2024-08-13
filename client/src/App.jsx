@@ -5,6 +5,7 @@ import './App.css'
 import axios from 'axios'
 import { Routes, Route } from 'react-router-dom'
 import Forecast from './pages/Stocks/Stocks'
+import Forecast1 from './pages/crypto/crypto'
 import Home from './pages/Home/Home'
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/stocks" element={<Forecast />} />
+        <Route path="/crypto" element={<Forecast1 />} />
         
       </Routes>
     </div>
