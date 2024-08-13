@@ -1,0 +1,194 @@
+.header {
+    height: 30vw;
+    margin: -50px auto;
+    background-size: contain;
+    background-image: url('stock2.1-modified.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.header1 {
+    height: 30vw;
+    margin: -50px auto;
+    background-size: contain;
+    background-image: url('crypto2.1-modified.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 100%;
+    bottom: 10%;
+    left: 2vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+    margin-top: -380px;
+}
+
+.header-contents p{
+    color: white;
+    font-size: 1.4vw;
+}
+
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1.2vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header-contents button:hover {
+    background-color: #c2d9e1;
+    color: #747474; 
+}
+
+.login-popup{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+
+.login-popup-container{
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+}
+
+.login-popup-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.login-popup-title img{
+    width: 16px;
+    cursor: pointer;
+}
+
+.login-popup-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-popup-input input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.login-popup-container button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-popup-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+
+.login-popup-condition input{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.login-popup p span{
+    color: tomato;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media (max-width: 1600px){
+    .header{
+        max-width: 85%;
+    }
+    .header1{
+        max-width: 85%;
+    }
+    .header-contents h2{
+        margin-top: -250px;
+    }
+}
+
+@media (max-width: 1400px){
+    .header{
+        max-width: 80%;
+    }
+    .header1{
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 1250px){
+    .header{
+        max-width: 80%;
+    }
+    .header1{
+        max-width: 80%;
+    }
+    .header-contents h2{
+        margin-top: -80px;
+    }
+}
+
+@media (max-width: 1050px){
+    .header-contents{
+        max-width: 45%;
+    }
+    .header{
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 750px){
+    .header-contents{
+        max-width: 65%;
+    }
+    .header{
+        max-width: 45%;
+    }
+
+    .header-contents p{
+        display: none;
+    }
+
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
