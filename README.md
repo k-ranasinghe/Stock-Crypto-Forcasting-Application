@@ -11,7 +11,7 @@ can capture long term trends by holding information in containers for a longer p
 For the regression model a simple linear regressor was used. Other models such Random Forrest, Gradient 
 Boost, XG Boost, Decision trees were also tried out but performed poorly. Which is understandable as 
 market trends are highly correlated with the individual stock prices. Threfore complex models 
-under perform on the datasets. <br>
+may overshoot the prediction. <br>
 
 The two predictions made by the models are added together with pre-determined weights to build the 
 final forcast which is displayed as a graph as shown below. <br>
