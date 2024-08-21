@@ -54,7 +54,7 @@ The web application was built using React Vite for the frontend and Flask for th
     npm run dev
     ```
 
-If the above steps were followed correctly the application will open in your default browser on `http://localhost:3000`.
+If above steps were followed correctly the application will open in your default browser on `http://localhost:3000`
 
 ## Machine Learning Models
 
